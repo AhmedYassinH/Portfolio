@@ -1,0 +1,395 @@
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/me.png">
+    <title>Ahmed Yassin</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/output.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body class="transition-colors duration-500" id="theme">
+
+    <div class="view-container">
+
+        <!-- Start Header -->
+        <header id="header">
+            <div
+                class=" relative px-8 pt-6 lg:flex lg:items-center lg:pt-8 lg:gap-x-80 xl:container xl:mx-auto xl:px-12 xl:justify-between xl:gap-x-0  ">
+                <a href="https://www.linkedin.com/in/ahmed-yassinh/" target="_blank"><img src="./images/logo.png" alt="Logo" class="inline-block  w-20 lg:w-28"></a>
+
+                <!-- Mobile Navigation Bar -->
+
+                <button id="icon" class="absolute right-8  inline-block  lg:hidden focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                </button>
+                <nav id="navbar-links" class="hidden lg:hidden text-center border-1">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="# tech-stack">Tech Stack</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <button id="theme-toggle" type="button"
+                                class="text-gray-500 dark:text-gray-400 transition bg-white dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm p-2.5">
+                                <svg id="theme-toggle-dark-icon" class="dark:hidden fill-yellow-400 w-7 h-7"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                </svg>
+                                <svg id="theme-toggle-light-icon"
+                                    class="hidden dark:inline-block fill-yellow-400 w-7 h-7" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+
+
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <!-- Desktop Navigation Bar -->
+                <nav class="hidden  lg:block">
+                    <ul class=" lg:flex lg:justify-center lg:gap-5">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#tech-stack">Tech Stack</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+
+                            <button id="theme-toggle" type="button"
+                                class="relative bottom-1 text-gray-500 dark:text-gray-400 transition bg-white dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm p-1.5">
+                                <svg id="theme-toggle-dark-icon" class="dark:hidden fill-yellow-400 w-5 h-5"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                </svg>
+                                <svg id="theme-toggle-light-icon"
+                                    class=" hidden dark:inline-block fill-yellow-400 w-5 h-5" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Hero -->
+        <main id="hero" class="flex justify-center items-center">
+            <div
+                class="container mx-auto px-12 flex flex-col items-center justify-center md:flex-row md:gap-x-28 lg:gap-x-56 ">
+                <img src="./images/me.png" alt="my picture" class="inline-block w-52 md:w-72 lg:w-80">
+                <div>
+                    <article
+                        class="font-poppins font-bold text-3xl leading-9 mt-8  md:text-4xl lg:text-5xl">
+                        Hi, <br />
+                        I am <br />
+                        <i class="gradient-text font-extrabold">Ahmed Yassin</i> <br />
+                        a <span>Full Stack</span> <br />
+                        Web Developer
+                    </article>
+                    <div class="relative flex gap-4 mt-4 lg:mt-6">
+                        <a target="_blank" href="https://github.com/AhmedYassinH">
+                            <svg class="w-10" width="54" height="55" viewBox="0 0 54 55" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27 0.0153809C12.0825 0.0153809 0 12.4035 0 27.6983C0 39.948 7.72875 50.2945 18.4613 53.9625C19.8113 54.2047 20.3175 53.3742 20.3175 52.6476C20.3175 51.9901 20.2838 49.8101 20.2838 47.4916C13.5 48.7719 11.745 45.796 11.205 44.2389C10.9012 43.443 9.585 40.9861 8.4375 40.3287C7.4925 39.8096 6.1425 38.5293 8.40375 38.4947C10.53 38.4601 12.0488 40.5017 12.555 41.3322C14.985 45.5192 18.8663 44.3427 20.4188 43.616C20.655 41.8166 21.3638 40.6055 22.14 39.9134C16.1325 39.2213 9.855 36.8337 9.855 26.245C9.855 23.2344 10.9013 20.743 12.6225 18.8052C12.3525 18.1131 11.4075 15.2756 12.8925 11.4692C12.8925 11.4692 15.1537 10.7425 20.3175 14.3067C22.4775 13.6838 24.7725 13.3724 27.0675 13.3724C29.3625 13.3724 31.6575 13.6838 33.8175 14.3067C38.9813 10.7079 41.2425 11.4692 41.2425 11.4692C42.7275 15.2756 41.7825 18.1131 41.5125 18.8052C43.2338 20.743 44.28 23.1998 44.28 26.245C44.28 36.8683 37.9688 39.2213 31.9613 39.9134C32.94 40.7785 33.7838 42.4395 33.7838 45.0347C33.7838 48.7373 33.75 51.7133 33.75 52.6476C33.75 53.3742 34.2563 54.2393 35.6063 53.9625C40.9662 52.1071 45.6237 48.5751 48.9232 43.8637C52.2228 39.1522 53.9984 33.4985 54 27.6983C54 12.4035 41.9175 0.0153809 27 0.0153809Z" />
+                            </svg>
+
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ahmed-yassinh/">
+                            <svg class="w-10" width="52" height="52" viewBox="0 0 52 52"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26 0.0799866C11.6846 0.0799866 0.0800171 11.6846 0.0800171 26C0.0800171 40.3154 11.6846 51.92 26 51.92C40.3154 51.92 51.92 40.3154 51.92 26C51.92 11.6846 40.3154 0.0799866 26 0.0799866ZM19.655 36.7433H14.4062V19.8521H19.655V36.7433ZM16.9982 17.7785C15.3404 17.7785 14.2685 16.604 14.2685 15.1514C14.2685 13.6691 15.3728 12.5297 17.0657 12.5297C18.7586 12.5297 19.7954 13.6691 19.8278 15.1514C19.8278 16.604 18.7586 17.7785 16.9982 17.7785ZM38.825 36.7433H33.5762V27.3824C33.5762 25.2035 32.8148 23.7239 30.9167 23.7239C29.4668 23.7239 28.6055 24.7256 28.2248 25.6895C28.0844 26.0324 28.0493 26.5184 28.0493 27.0017V36.7406H22.7978V25.2386C22.7978 23.1299 22.7303 21.3668 22.6601 19.8494H27.2204L27.4607 22.1957H27.566C28.2572 21.0941 29.9501 19.4687 32.7824 19.4687C36.2357 19.4687 38.825 21.7826 38.825 26.756V36.7433Z" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="#">
+                            <svg class="w-8" width="47
+                            " height="55" viewBox="0 0 47 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.87516 55H46.4168V2.29167H44.1252V52.7083H2.87516V55ZM41.8335 0H0.583496V50.4167H41.8335V0ZM39.5418 2.29167H2.87516V48.125H39.5418V2.29167ZM34.9585 38.9583H7.4585V41.25H34.9585V38.9583ZM34.9585 32.0833H7.4585V34.375H34.9585V32.0833ZM34.9585 25.2083H7.4585V27.5H34.9585V25.2083ZM18.1193 16.3556L20.2918 17.0431C19.9595 18.2554 19.405 19.156 18.6304 19.7427C17.8558 20.3317 16.8727 20.625 15.681 20.625C14.2075 20.625 12.9975 20.1208 12.0487 19.1148C11.1 18.1087 10.6256 16.7315 10.6256 14.9852C10.6256 13.1381 11.1022 11.7035 12.0556 10.6815C13.0089 9.65937 14.2625 9.14833 15.8185 9.14833C17.1752 9.14833 18.2775 9.54938 19.1254 10.3515C19.6318 10.8258 20.01 11.5088 20.262 12.3956L18.0437 12.925C17.9131 12.3498 17.6381 11.896 17.2233 11.5638C16.8062 11.2292 16.2997 11.0642 15.7039 11.0642C14.8812 11.0642 14.2143 11.3598 13.701 11.9488C13.19 12.54 12.9333 13.4956 12.9333 14.8179C12.9333 16.2227 13.1854 17.2219 13.6918 17.8154C14.196 18.4113 14.8514 18.7092 15.6581 18.7092C16.2539 18.7092 16.7672 18.5213 17.1958 18.1408C17.6243 17.7627 17.9337 17.1669 18.1193 16.3556ZM25.047 20.4348L21.0802 9.33854H23.5093L26.3189 17.5519L29.0368 9.33854H31.4133L27.4395 20.4348H25.047Z" />
+                            </svg>
+
+                        </a>
+                        <img src="./images/icons/hand.png" alt="hand" class="hand-icon w-10 absolute left-44 top-2">
+                            
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </main>
+        <!-- End Hero -->
+    </div>
+
+    <!-- Start Tech Stack -->
+    <section id="tech-stack" class=" lg:mt-20">
+        <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">My Tech Stack</h1>
+        <h4 class="text-center mt-2 text-xs md:text-lg lg:text-xl  ">Technologies and languages I’ve been working with
+            recently</h4>
+        <div class="container mx-auto px-12 flex justify-center ">
+            <div class="icons mt-5 gap-x-2 gap-y-4 grow  md:gap-x-10 md:gap-y-8 lg:mt-8   ">
+                <img class="w-10 md:w-20" src="./images/icons/stack/html.png" alt="html">
+                <img class="w-10 md:w-20" src="./images/icons/stack/css.png" alt="css">
+                <img class="w-10 md:w-20" src="./images/icons/stack/js.png" alt="js">
+                <img class="w-10 md:w-20" src="./images/icons/stack/tailwind.png" alt="tailwind">
+                <img class="w-10 md:w-20" src="./images/icons/stack/bootstrap.png" alt="bootstrap">
+                <img class="w-10 md:w-20" src="./images/icons/stack/react.png" alt="react">
+                <img class="w-10 md:w-20 dark:hidden" src="./images/icons/stack/githubLight.png" alt="github">
+                <img class="w-10 md:w-20 hidden dark:inline" src="./images/icons/stack/githubDark.png" alt="github">
+                <img class="w-10 md:w-20" src="./images/icons/stack/realdotnet.png" alt="dotnet">
+                <img class="w-10 md:w-20" src="./images/icons/stack/postgresql.png" alt="postgresql">
+                <img class="w-10 md:w-20" src="./images/icons/stack/python.png" alt="python">
+                <img class="w-10 md:w-20" src="./images/icons/stack/tf.png" alt="tf">
+                <img class="w-10 md:w-20" src="./images/icons/stack/opencv.png" alt="opencv">
+            </div>
+        </div>
+
+    </section>
+    <!-- End Tech Stack -->
+
+
+    <!-- Start Projects Section -->
+    <section id="projects" class=" mt-12 lg:mt-28">
+        <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">Projects</h1>
+        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  "> Things I've built recently</h4>
+        <div class="container mx-auto px-12 flex flex-col items-center justify-center lg:flex-row lg:gap-x-10">
+            <div
+                class="card relative h-120 w-80 md:w-72  mb-4 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+                <img class="absolute top-0 left-0 w-80 md:w-72 " src="./images/library.png"
+                    alt="Library Management System">
+                <article class="relative top-56 md:top-52 ">
+                    <h2 class="font-bold text-lg text-center mb-2">Library.ai</h2>
+                    <p class="text-sm leading-6">
+                        <i class="font-bold">Library.ai</i> is a Library Managment
+                        System.It makes your life easier by
+                        automating all library processes
+                        <br>
+                        <br>
+                        <strong>Tech stack</strong> : HTML, CSS, REACT, ASP.NET
+                    </p>
+                    <div class="links w-62 mt-5 flex justify-between items-center">
+                        <a target="_blank" href="#" class="flex">
+                            <img class="dark:hidden" src="./images/icons/links/linkLight.svg" alt="link icon">
+                            <img class="hidden dark:inline " src="./images/icons/links/linkDark.svg" alt="link icon">
+
+                            <p class="ml-2 underline">Live Preview</p>
+                        </a>
+
+
+                        <a target="_blank" href="#" class=" flex">
+                            <img class="dark:hidden" src="./images/icons/links/githubLight.svg" alt="github icon">
+                            <img class="hidden dark:inline " src="./images/icons/links/githubDark.svg"
+                                alt="github icon">
+                            <p class="ml-2 underline">View Code</p>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div
+                class="card relative h-120 w-80 md:w-72  mb-4 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+                <img class="absolute top-0 left-0 w-80 md:w-72 " src="./images/library.png"
+                    alt="Library Management System">
+                <article class="relative top-56 md:top-52 ">
+                    <h2 class="font-bold text-lg text-center mb-2">Library.ai</h2>
+                    <p class="text-sm leading-6">
+                        <i class="font-bold">Library.ai</i> is a Library Managment
+                        System.It makes your life easier by
+                        automating all library processes
+                        <br>
+                        <br>
+                        <strong>Tech stack</strong> : HTML, CSS, REACT, ASP.NET
+                    </p>
+                    <div class="links w-62 mt-5 flex justify-between items-center">
+                        <a target="_blank" href="#" class="flex">
+                            <img class="dark:hidden" src="./images/icons/links/linkLight.svg" alt="link icon">
+                            <img class="hidden dark:inline " src="./images/icons/links/linkDark.svg" alt="link icon">
+
+                            <p class="ml-2 underline">Live Preview</p>
+                        </a>
+
+
+                        <a target="_blank" href="#" class=" flex">
+                            <img class="dark:hidden" src="./images/icons/links/githubLight.svg" alt="github icon">
+                            <img class="hidden dark:inline " src="./images/icons/links/githubDark.svg"
+                                alt="github icon">
+                            <p class="ml-2 underline">View Code</p>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div
+                class="card relative h-120 w-80 md:w-72  mb-4 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+                <img class="absolute top-0 left-0 w-80 md:w-72 " src="./images/library.png"
+                    alt="Library Management System">
+                <article class="relative top-56 md:top-52 ">
+                    <h2 class="font-bold text-lg text-center mb-2">Library.ai</h2>
+                    <p class="text-sm leading-6">
+                        <i class="font-bold">Library.ai</i> is a Library Managment
+                        System.It makes your life easier by
+                        automating all library processes
+                        <br>
+                        <br>
+                        <strong>Tech stack</strong> : HTML, CSS, REACT, ASP.NET
+                    </p>
+                    <div class="links w-62 mt-5 flex justify-between items-center">
+                        <a target="_blank" href="#" class="flex">
+                            <img class="dark:hidden" src="./images/icons/links/linkLight.svg" alt="link icon">
+                            <img class="hidden dark:inline " src="./images/icons/links/linkDark.svg" alt="link icon">
+
+                            <p class="ml-2 underline">Live Preview</p>
+                        </a>
+
+
+                        <a target="_blank" href="#" class=" flex">
+                            <img class="dark:hidden" src="./images/icons/links/githubLight.svg" alt="github icon">
+                            <img class="hidden dark:inline " src="./images/icons/links/githubDark.svg"
+                                alt="github icon">
+                            <p class="ml-2 underline">View Code</p>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Projects Section -->
+
+
+    <!-- Start Contact Section -->
+    <section id="contact" class=" mt-12 lg:mt-28">
+        <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">Contact</h1>
+        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  "> Get in touch!</h4>
+        <div class="container mx-auto px-12 flex justify-center ">
+            <div class="lg:flex lg:items-start lg:gap-x-20">
+                <form id="formspree-form" class="flex flex-col items-center mb-10 lg:gap-y-8" action="https://formspree.io/f/mgegnnze" method="post">
+                    <input type="text" id="name" name="name" placeholder="Name*"
+                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120 p-1.5 lg:pl-2 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
+                    <input type="text" id="email" name="email" placeholder="Email*"
+                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120  p-1.5 lg:pl-2 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject*"
+                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120  p-1.5 lg:pl-2 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
+                    <textarea id="message" name="message" placeholder="Message*"
+                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120  h-48 lg:pl-2 p-1.5 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required></textarea>
+                        <p id="form-status" class=""></p>
+                    <input type="submit" value="Submit"
+                        class="block w-32 lg:w-36 p-2 text-white text-sm md:text-lg bg-submit-none cursor-pointer rounded-full hover:bg-submit-hover">
+
+                </form>
+
+                <div class="flex flex-col items-center gap-y-5 lg:gap-y-8">
+                    <div
+                        class="flex flex-col items-center lg:text-xl w-80 lg:w-96 p-5 md:p-4 lg:p-6 dark:bg-card-dark shadow-lg rounded-xl ">
+                        <img src="./images/icons/phone.png" class="w-20 mb-3 md:w-16 lg:w-22" alt="phone icon">
+                        <p class="mb-1">Phone</p>
+                        <a class="text-black dark:text-heading-dark underline"
+                            href="tel:+971567680570">+971567680570</a>
+                    </div>
+                    <div class="flex flex-col items-center lg:text-xl w-80 lg:w-96 p-5 md:p-4 lg:p-6 dark:bg-card-dark shadow-lg rounded-xl ">
+                        <img src="./images/icons/envelope.png" class="w-20 mb-3 md:w-16 lg:w-22 " alt="envelope icon">
+                        <p class="mb-1">Email</p>
+                        <a class="text-black dark:text-heading-dark underline"
+                            href="mailto:dev.ahmedyassin@gmail.com">dev.ahmedyassin@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+
+    <footer class="mt-10">
+        <div class="container mx-auto px-12">
+
+            <h1 
+            class="leading-none mb-4 whitespace-pre text-lg font-bold text-heading-light dark:text-content-dark"
+            >Ahmed
+    Yassin</h1>
+
+            <hr  class="border-gray-300 dark:border-gray-600">
+            <nav class="mt-8">
+                <ul class=" flex gap-x-5 md:gap-x-10 mb-16">
+                    <li>
+                        <a href="#hero">Home</a>
+                    </li>
+                    <li>
+                        <a href="#hero">About</a>
+                    </li>
+                    <li>
+                        <a href="#tech-stack">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/toggleDarkMode.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/typewritterEffect.js.js"></script>
+    <!-- <script src="./js/formSubmission.js"></script> -->
+
+</body>
+
+</html>
