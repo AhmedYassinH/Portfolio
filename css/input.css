@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-font-color: #3a1700;
+  --secondary-font-color: #3a170070;
+  --blue-font-color: #009eff;
+}
+
+.light {
+  --body-bg: #ffffff;
+  --heading: #42446e;
+  --content: #666666;
+  --hero: #d9d9d9;
+}
+.dark {
+  --body-bg: #191919;
+  --heading: #cccccc;
+  --content: #a7a7a7;
+  --hero: #cccccc;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-bg);
+  color: var(--content);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--heading);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background-image: linear-gradient(
+    15deg,
+    rgba(19, 200, 245, 1) 0%,
+    rgb(231 15 170) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Mobile Navigation */
+
+#navbar-links ul li {
+  margin: 8px;
+}
+.view-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+/* Hero */
+#hero article {
+  color: var(--heading);
+}
+
+.hand-icon {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-20px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+/* Tech Stack */
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 3rem);
+  justify-content: center;
+
+ 
+}
+
+@media (min-width: 768px) {
+  .icons {
+    max-width: 24rem /* 384px */;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icons {
+    max-width: 34rem /* 384px */;
+  }
+}
