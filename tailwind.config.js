@@ -50,11 +50,16 @@ module.exports = {
         22: "5.5rem",
         62: "15.5rem",
         90: "22.5rem",
-        100 : "25rem",
+        100: "25rem",
         112: "28rem",
         120: "30rem",
         128: "32rem",
       },
+      spacing: {
+        50: "12.5rem",
+        54: "13.5rem",
+      },
+
       boxShadow: {
         "3xl":
           "0 35px 60px -15px rgba(0, 0, 0, 0.3), 0 25px 25px -15px rgba(0, 0, 0, 0.2)",
