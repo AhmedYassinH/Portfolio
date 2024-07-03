@@ -49,11 +49,16 @@ module.exports = {
       width: {
         22: "5.5rem",
         62: "15.5rem",
+        76: "19rem",
         90: "22.5rem",
+        94: "23.5rem",
         100: "25rem",
         112: "28rem",
         120: "30rem",
         128: "32rem",
+      },
+      text: {
+        md: "1rem", // Customize the font size as needed
       },
       spacing: {
         50: "12.5rem",

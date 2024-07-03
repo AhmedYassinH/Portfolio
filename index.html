@@ -174,7 +174,7 @@
     <!-- Start Tech Stack -->
     <section id="tech-stack" class=" lg:mt-20">
         <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">My Tech Stack</h1>
-        <h4 class="text-center mt-2 text-xs md:text-lg lg:text-xl  ">Technologies and languages I’ve been working with
+        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  ">Technologies and languages I’ve been working with
             recently</h4>
         <div class="container mx-auto px-12 flex justify-center ">
             <div class="icons mt-5 gap-x-2 gap-y-4 grow  md:gap-x-10 md:gap-y-8 lg:mt-8   ">
@@ -201,10 +201,10 @@
     <!-- Start Projects Section -->
     <section id="projects" class=" mt-12 lg:mt-28">
         <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">Projects</h1>
-        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  "> Things I've built recently</h4>
+        <h4 class="text-center mt-2 mb-10 text-xs md:text-lg lg:text-xl  "> Things I've built recently</h4>
         <div class="container mx-auto px-12 flex flex-col items-center justify-center lg:flex-row lg:gap-x-10">
             <div
-                class="card relative h-120 w-80 md:w-72  mb-4 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+                class="card relative h-120 w-80 md:w-72 mb-8 lg:mb-0 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
                 <img class="absolute top-0 left-0 h-50 w-80 md:w-72 rounded-t-xl" src="./images/lms.png"
                     alt="Library Management System">
                 <article class="relative top-54 md:top-50 ">
@@ -224,7 +224,7 @@
                     </div>
                 </article>
             </div>
-            <div class="card relative h-120 w-80 md:w-72  mb-4 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+            <div class="card relative h-120 w-80 md:w-72 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
                 <img class="absolute top-0 left-0 h-50 w-80 md:w-72 rounded-t-xl" src="./images/brs.png" alt="Library Management System">
                 <article class="relative top-54 md:top-50 ">
                     <h2 class="font-bold text-sm text-center mb-2">Book Retrieval System<br/>(AI powered robot)</h2>
@@ -255,34 +255,34 @@
     <!-- Start Contact Section -->
     <section id="contact" class=" mt-12 lg:mt-28">
         <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">Contact</h1>
-        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  "> Get in touch!</h4>
+        <h4 class="text-center mt-2 mb-10 text-xs md:text-lg lg:text-xl  "> Get in touch!</h4>
         <div class="container mx-auto px-12 flex justify-center ">
             <div class="lg:flex lg:items-start lg:gap-x-20">
                 <form id="formspree-form" class="flex flex-col items-center mb-10 lg:gap-y-8" action="https://formspree.io/f/mgegnnze" method="post">
                     <input type="text" id="name" name="name" placeholder="Name*"
-                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120 p-1.5 lg:pl-2 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
+                        class=" block text-xs md:text-sm lg:text-md mb-5 lg:mb-0 w-80 md:w-96 lg:w-112 p-1.5 lg:pl-2 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
                     <input type="text" id="email" name="email" placeholder="Email*"
-                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120  p-1.5 lg:pl-2 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
-                    <input type="text" id="subject" name="subject" placeholder="Subject*"
-                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120  p-1.5 lg:pl-2 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
-                    <textarea id="message" name="message" placeholder="Message*"
-                        class=" block text-xs md:text-sm lg:text-lg w-80 md:w-96 lg:w-120  h-48 lg:pl-2 p-1.5 mb-4 focus:outline-none border border-form-stroke dark:bg-card-dark" required></textarea>
+                        class=" block text-xs md:text-sm lg:text-md mb-5 lg:mb-0  w-80 md:w-96 lg:w-112  p-1.5 lg:pl-2 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
+                    <input type="text" id="subject" name="subject"  mb-5 lg:mb-0 placeholder="Subject*"
+                        class=" block text-xs md:text-sm lg:text-md mb-5 lg:mb-0  w-80 md:w-96 lg:w-112  p-1.5 lg:pl-2 focus:outline-none border border-form-stroke dark:bg-card-dark" required>
+                    <textarea id="message" name="message" placeholder="Message*" mb-5 lg:mb-0 
+                        class=" block text-xs md:text-sm lg:text-md mb-5 lg:mb-0  w-80 md:w-96 lg:w-112  h-48 lg:pl-2 p-1.5 focus:outline-none border border-form-stroke dark:bg-card-dark" required></textarea>
                         <p id="form-status" class=""></p>
                     <input type="submit" value="Submit"
-                        class="block w-32 lg:w-36 p-2 text-white text-sm md:text-lg bg-submit-none cursor-pointer rounded-full hover:bg-submit-hover">
+                        class="block lg:relative bottom-6 w-32 lg:w-36 p-2 text-white text-sm md:text-md bg-submit-none cursor-pointer rounded-full hover:bg-submit-hover">
 
                 </form>
 
-                <div class="flex flex-col items-center gap-y-5 lg:gap-y-8">
+                <div class="flex flex-col items-center gap-y-5 lg:gap-y-5">
                     <div
-                        class="flex flex-col items-center lg:text-xl w-80 lg:w-96 p-5 md:p-4 lg:p-6 dark:bg-card-dark shadow-lg rounded-xl ">
-                        <img src="./images/icons/phone.png" class="w-20 mb-3 md:w-16 lg:w-22" alt="phone icon">
+                        class="flex flex-col items-center lg:text-lg w-76 lg:w-90 p-5 md:p-4 lg:p-4 dark:bg-card-dark shadow-lg rounded-xl ">
+                        <img src="./images/icons/phone.png" class="w-16 mb-1 md:w-16 lg:w-20" alt="phone icon">
                         <p class="mb-1">Phone</p>
                         <a class="text-black dark:text-heading-dark underline"
                             href="tel:+971567680570">+971567680570</a>
                     </div>
-                    <div class="flex flex-col items-center lg:text-xl w-80 lg:w-96 p-5 md:p-4 lg:p-6 dark:bg-card-dark shadow-lg rounded-xl ">
-                        <img src="./images/icons/envelope.png" class="w-20 mb-3 md:w-16 lg:w-22 " alt="envelope icon">
+                    <div class="flex flex-col items-center lg:text-lg w-76 lg:w-90 p-5 md:p-4 lg:p-4 dark:bg-card-dark shadow-lg rounded-xl ">
+                        <img src="./images/icons/envelope.png" class="w-16 mb-1 md:w-16 lg:w-20 " alt="envelope icon">
                         <p class="mb-1">Email</p>
                         <a class="text-black dark:text-heading-dark underline"
                             href="mailto:dev.ahmedyassin@gmail.com">dev.ahmedyassin@gmail.com</a>
