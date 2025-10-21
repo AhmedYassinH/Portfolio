@@ -12,8 +12,13 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ahmed Yassin – Full-Stack Software Engineer skilled in React, Next.js, Node.js, ASP.NET Core, TypeScript, Docker, and CI/CD. Building scalable, high-performance web applications in Dubai, UAE.">
+
+
     <link rel="icon" href="./images/me.png">
-    <title>Ahmed Yassin</title>
+    <title>Ahmed Yassin | Full Stack Engineer Portfolio</title>
+
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/output.css">
@@ -59,7 +64,7 @@
                             <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="# tech-stack">Tech Stack</a>
+                            <a href="#tech-stack">Tech Stack</a>
                         </li>
                         <li>
                             <a href="#projects">Projects</a>
@@ -142,7 +147,10 @@
                         I am <br />
                         <i class="gradient-text font-extrabold">Ahmed Yassin</i> <br />
                         a <span>Full Stack</span> <br />
-                        Engineer
+                        Engineer <br />
+                        <span class="block mt-3 md:mt-4 font-normal text-xl md:text-2xl">
+                            I design & ship scalable backends, clean APIs, and reliable frontends.
+                        </span>
                     </article>
                     <div class="relative flex gap-4 mt-4 lg:mt-6">
                         <a target="_blank" href="https://github.com/AhmedYassinH">
@@ -176,16 +184,48 @@
 
                 </div>
             </div>
+
         </main>
         <!-- End Hero -->
+
+
     </div>
+
+    <!-- Start About Section -->
+    <section id="about" class="mt-12 lg:mt-20 mb-8 lg:mb-16">
+        <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">About</h1>
+        <h4 class="text-center mt-2 mb-6 text-xs md:text-lg lg:text-xl">
+            Who I am and what I do
+        </h4>
+        <div class="container mx-auto px-12 flex flex-col items-center ">
+            <p
+                class="text-lg md:text-xl leading-7 text-center max-w-2xl text-heading-light dark:text-heading-dark mb-4 text-justify">
+                I’m a software engineer passionate about designing systems that scale gracefully and stand the test of
+                time.
+                My work blends
+                <span class="font-semibold text-[1.05em] md:text-[1.1em]">architecture, automation, and cloud
+                    infrastructure</span>
+                to build dependable products with clear, maintainable codebases.
+            </p>
+            <p
+                class="text-lg md:text-xl leading-7 text-center max-w-2xl text-heading-light dark:text-heading-dark text-justify">
+                I enjoy bridging backend engineering with DevOps and cloud design—leveraging
+                <span class="font-semibold text-[1.05em] md:text-[1.1em]">AWS, GCP, and containerized
+                    environments</span>
+                to deliver observable, fault-tolerant platforms. Beyond implementation, I value
+                <span class="font-semibold text-[1.05em] md:text-[1.1em]">thoughtful design, structured logging,</span>
+                and efficient developer workflows that keep teams productive.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- End About Section -->
 
     <!-- Start Tech Stack -->
     <section id="tech-stack" class=" lg:mt-20">
-        <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">My Tech Stack</h1>
-        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  ">Technologies and languages I’ve been working
-            with
-            recently</h4>
+        <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">Tech Stack</h1>
+        <h4 class="text-center mt-2 mb-8 text-xs md:text-lg lg:text-xl  ">Core stack for scalable delivery</h4>
         <div class="container mx-auto px-12 flex justify-center ">
             <div class="icons mt-5 gap-x-2 gap-y-4 grow  md:gap-x-10 md:gap-y-8 lg:mt-8   ">
                 <img class="w-10 md:w-20" src="./images/icons/stack/html.png" alt="html">
@@ -208,30 +248,32 @@
     <!-- End Tech Stack -->
 
 
+
+
     <!-- Start Projects Section -->
     <section id="projects" class=" mt-12 lg:mt-28">
         <h1 class="text-center font-bold text-xl md:text-2xl lg:text-3xl">Projects</h1>
-        <h4 class="text-center mt-2 mb-10 text-xs md:text-lg lg:text-xl  "> Things I've built recently</h4>
+        <h4 class="text-center mt-2 mb-10 text-xs md:text-lg lg:text-xl  ">Selected Work</h4>
         <div class="container mx-auto px-12 flex flex-col items-center justify-center lg:flex-row lg:gap-x-10">
             <div
-                class="card relative h-120 w-80 md:w-72 mb-8 lg:mb-0 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+                class="card relative h-128 w-80 md:w-72 mb-8 lg:mb-0 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
                 <img class="absolute top-0 left-0 h-50 w-80 md:w-72 rounded-t-xl" src="./images/lms.png"
                     alt="Library Management System">
                 <article class="relative top-54 md:top-50 ">
                     <h2 class="font-bold text-sm text-center mb-2">Library Management System</h2>
                     <p class="text-xs leading-6 text-justify">
-                        <i class="font-bold">LMS</i> a streamlined solution crafted with ASP.NET Core and React to
-                        modernize the way libraries operate. Designed for both library staff and borrowers, to simplify
-                        the management of library resources.
+                        Owned the backend: domain model, REST APIs, RBAC/JWT, validation, and data access.
+                        Clean boundaries (services + DTO mapping) and predictable error handling; documented with
+                        Swagger and a concise runbook for setup/seed/CI.
                         <br>
-                        <strong>Tech stack</strong> : ASP.NET Core 6, EF Core, Automapper, React.
+                        <strong>Tech</strong>: ASP.NET Core 6, EF Core, AutoMapper, PostgreSQL, React.
                     </p>
                     <div class="links w-62 mt-4 flex justify-center items-center gap-x-6">
-                        <a target="_blank" href="https://elib.ahmedyassin.dev/swagger" class="flex text-sm">
+                        <!-- <a target="_blank" href="https://elib.ahmedyassin.dev/swagger" class="flex text-sm">
                             <img class="dark:hidden" src="./images/icons/links/linkLight.svg" alt="github icon">
                             <img class="hidden dark:inline " src="./images/icons/links/linkDark.svg" alt="github icon">
                             <p class="ml-2 underline">Preview</p>
-                        </a>
+                        </a> -->
                         <a target="_blank" href="https://github.com/CodeCollabHubA/Library-Management-System/tree/main"
                             class="flex text-sm">
                             <img class="dark:hidden" src="./images/icons/links/githubLight.svg" alt="github icon">
@@ -242,7 +284,7 @@
                     </div>
                 </article>
             </div>
-            <div
+            <!-- <div
                 class="card relative h-120 w-80 md:w-72 mb-8 lg:mb-0 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
                 <img class="absolute top-0 left-0 h-50 w-80 md:w-72 rounded-t-xl" src="./images/brs.png"
                     alt="Library Management System">
@@ -265,18 +307,18 @@
                         </a>
                     </div>
                 </article>
-            </div>
+            </div> -->
 
-            <div class="card relative h-120 w-80 md:w-72 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
+            <div class="card relative h-128 w-80 md:w-72 bg-card-light dark:bg-card-dark shadow-2xl rounded-xl p-5">
                 <img class="absolute top-0 left-0 h-50 w-80 md:w-72 rounded-t-xl" src="./images/BugNet.png"
                     alt="BugNet text-content-dark">
                 <article class="relative top-54 md:top-50 ">
                     <h2 class="font-bold text-sm text-center mb-2">BugNet Core</h2>
                     <p class="text-xs leading-6 text-justify">
-                        BugNet Core offers a robust solution for development teams to
-                        efficiently handle bug reports, collaborate in real-time, and provide live support to customers.
-                        <br />
-                        <strong>Tech stack</strong> : ASP.NET Core 8, EF Core, Automapper, React.
+                        Issue tracking + live support with real-time updates. Hexagonal architecture (Presentation,
+                        Business, Data persistence), structured
+                        logging.
+                        <br><strong>Tech</strong>: React, ASP.NET Core 8, SignalR, Serilog.
                     </p>
                     <div class="links w-62 mt-4 flex justify-center items-center gap-x-6">
                         <a target="_blank" href="https://bugnet-welcome.pages.dev/" class="flex text-sm">
