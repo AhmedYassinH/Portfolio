@@ -85,25 +85,29 @@ main {
   color: var(--heading);
 }
 
-.hand-icon {
-  animation: bounce 1s infinite;
+.cv-icon {
+  animation: shake 2s infinite ease-in-out;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-20px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  75% {
-    transform: translateX(20px);
-  }
+@keyframes shake {
+  0%,
   100% {
-    transform: translateX(0);
+    transform: rotate(0);
+  }
+  2% {
+    transform: rotate(9deg);
+  }
+  4% {
+    transform: rotate(-9deg);
+  }
+  6% {
+    transform: rotate(7deg);
+  }
+  8% {
+    transform: rotate(-7deg);
+  }
+  10% {
+    transform: rotate(0);
   }
 }
 
