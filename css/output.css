@@ -3049,6 +3049,10 @@ main {
     width: 18rem;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
@@ -3162,10 +3166,6 @@ main {
     width: 9rem;
   }
 
-  .lg\:w-80 {
-    width: 20rem;
-  }
-
   .lg\:w-90 {
     width: 22.5rem;
   }
@@ -3255,6 +3255,10 @@ main {
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .xl\:w-96 {
+    width: 24rem;
   }
 
   .xl\:justify-between {
