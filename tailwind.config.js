@@ -1,76 +1,38 @@
-/** @type {import('tailwindcss').Config} */
+﻿/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "selector",
-  content: ["./**/*.{html,js}"],
+  darkMode: 'class',
+  content: ['./index.html', './js/**/*.js'],
   theme: {
     extend: {
       colors: {
-        card: {
-          dark: "#363636",
-          light: "#fefefe",
+        bg: {
+          base: 'rgb(var(--bg-base) / <alpha-value>)',
+          surface: 'rgb(var(--bg-surface) / <alpha-value>)',
         },
-
-        "body-bg": {
-          dark: "#191919",
-          light: "#ffffff",
+        text: {
+          primary: 'rgb(var(--text-primary) / <alpha-value>)',
+          muted: 'rgb(var(--text-muted) / <alpha-value>)',
         },
-
-        heading: {
-          dark: "#cccccc",
-          light: "#42446e",
+        accent: {
+          primary: 'rgb(var(--accent-primary) / <alpha-value>)',
+          on: 'rgb(var(--accent-on) / <alpha-value>)',
         },
-        content: {
-          dark: "#a7a7a7",
-          light: "#666666",
-        },
-
-        hero: {
-          dark: "#cccccc",
-          light: "#d9d9d9",
-        },
-        "form-stroke": "#9DA0AA",
-        submit: {
-          none: "#7EC786",
-          hover: "#71b379",
+        border: {
+          subtle: 'rgb(var(--border-subtle) / <alpha-value>)',
         },
       },
-
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        rowdies: ["Rowdies", "cursive"],
+        display: ['Sora', 'sans-serif'],
+        sans: ['DM Sans', 'sans-serif'],
       },
-
-      height: {
-        62: "15.5rem",
-        112: "28rem",
-        120: "30rem",
-        128: "32rem",
-      },
-      width: {
-        22: "5.5rem",
-        62: "15.5rem",
-        76: "19rem",
-        90: "22.5rem",
-        94: "23.5rem",
-        100: "25rem",
-        112: "28rem",
-        120: "30rem",
-        128: "32rem",
-      },
-      text: {
-        md: "1rem", // Customize the font size as needed
-      },
-      spacing: {
-        50: "12.5rem",
-        54: "13.5rem",
-      },
-
       boxShadow: {
-        "3xl":
-          "0 35px 60px -15px rgba(0, 0, 0, 0.3), 0 25px 25px -15px rgba(0, 0, 0, 0.2)",
+        panel: '0 24px 60px rgba(5, 12, 20, 0.16)',
+      },
+      backgroundImage: {
+        'grid-fade':
+          'linear-gradient(to right, rgb(var(--border-subtle) / 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgb(var(--border-subtle) / 0.2) 1px, transparent 1px)',
       },
     },
   },
-  extend: {},
   plugins: [],
 };
